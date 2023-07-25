@@ -1,0 +1,14 @@
+site:
+  title: "com.example.KotlinWeb"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/developmentExecutable/KotlinWeb.js"
+      api: "build/libs/KotlinWeb.jar"
+    prod:
+      script: "build/distributions/KotlinWeb.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
